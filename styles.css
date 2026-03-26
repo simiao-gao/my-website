@@ -1,0 +1,5 @@
+:root{--bg:#fff;--fg:#111;--accent:#0a84ff}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:var(--fg);background:var(--bg);padding:2rem;max-width:900px;margin:0 auto}
+header h1{margin:0;font-size:2rem}
+a{color:var(--accent)}
