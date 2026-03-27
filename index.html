@@ -2,30 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simiao Gao, Ph.D. — Academic Profile</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Developer · Designer · Creator</p>
-  </header>
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>Short bio: who you are and what you do.</p>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="#">Project A</a></li>
-        <li><a href="#">Project B</a></li>
-      </ul>
-    </section>
-  </main>
+  <div class="container">
+    <aside class="profile-card">
+      <img src="photo.jpg" alt="Simiao Gao" class="profile-photo" onerror="this.style.display='none'" />
+      <h1>Simiao Gao, Ph.D.</h1>
+      <p class="subtitle">Postdoctoral Associate, Yale University, Department of Biostatistics</p>
+      <p><a class="button" href="CV.pdf" target="_blank">Download CV (PDF)</a></p>
+      <p><strong>Email:</strong> <a href="mailto:simiao.gao@yale.edu">simiao.gao@yale.edu</a></p>
+      <p><strong>Phone:</strong> +1 217 418 7446</p>
+      <p><strong>Location:</strong> New Haven, CT</p>
+      <div class="links">
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </aside>
+
+    <main class="profile-content">
+      <nav class="profile-nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#grants">Grants</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#awards">Awards</a>
+        <a href="#skills">Skills</a>
+        <a href="#references">References</a>
+      </nav>
+
+      <section id="about">
+        <h2>Research interests</h2>
+        <p>Bayesian model development, computation, and statistical inference; network meta-regression modeling for continuous (univariate and multivariate) and ordinal outcomes using aggregate and individual patient data; survival analysis for large-scale survey and observational studies; clinical trial design and statistical methodology; statistical methods for missing data; graphical and network-based modeling of brain connectivity; complex high-dimensional biomedical data (neuroimaging, genetics, EHR) and multimodal data integration.</p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Ph.D. in Statistics</strong>, University of Connecticut, Storrs, CT, 2023. Advisor: Prof. Ming-Hui Chen. Research: Bayesian Network Meta-regression Models for Aggregate and Individual Patient Multivariate Data.</li>
+          <li><strong>M.A. in Statistics</strong>, Columbia University, 2016.</li>
+          <li><strong>B.S. in Mathematics</strong> and <strong>B.S. in Economics</strong> (minor in Statistics), University of Illinois at Urbana-Champaign, 2014.</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Research experience</h2>
+        <article>
+          <h3>Yale University, Department of Biostatistics (2023–present)</h3>
+          <p>Postdoctoral Associate with Prof. Yize Zhao.</p>
+          <ul>
+            <li>Led large-scale neuroimaging studies (ABCD, HCP) on functional–structural gradient coupling and behavioral/genetic drivers.</li>
+            <li>Investigated structural connectivity mediation of genetic effects on functional brain networks.</li>
+            <li>Developed Bayesian hierarchical models for tau protein propagation in individualized functional connectivity.</li>
+            <li>Established semiparametric lifetime biomarker models with age/cohort/survival selection and kernel-profile estimating equations.</li>
+            <li>Developed Bayesian longitudinal network regression and supervised brain network construction methods.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Pfizer Research and Development (2020–2023)</h3>
+          <p>Student Research Fellow with Dr. Steven Gilbert.</p>
+          <ul>
+            <li>Reconstructed legacy SAS datasets for IBS trials; implemented prespecified analysis plans and subtype efficacy analyses.</li>
+            <li>Designed benchmarking procedures for reference-based multiple imputation (MAR, CR, J2R, CIR, LMCF) in R and SAS.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>University of Connecticut, Department of Statistics (2019–2023)</h3>
+          <p>Research Assistant with Prof. Ming-Hui Chen.</p>
+          <ul>
+            <li>Analyzed beverage intake and risk of hypertension/hyperlipidemia with interval-censored survival and factor analysis models.</li>
+            <li>Implemented Bayesian network meta-regression for pharmaceutical collaborations with Merck, Amgen, and UConn Kinesiology.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="publications">
+        <h2>Selected publications</h2>
+        <ul>
+          <li>Gao, S., Gu, Z., Ding, S., Wang, G., Zhang, Z., Zhao, H., Zhao, Y. (2026). Brain Functional-Structural Gradient Coupling Reflects Development, Behavior and Genetic Influences. <em>Nature Communications</em> (accepted).</li>
+          <li>Gao, S., Kim, S., Chen, M.-H., et al. (2026+). Bayesian network meta-regression models for multivariate aggregate responses. <em>Biometrics</em> (R&R).</li>
+          <li>Gao, S., Ding, S., Zhang, X., Gu, Z., Zhao, Y. (2026+). The Mediating Role of Structural Connectivity in Genetic Effects on Functional Brain Networks. <em>Imaging Neuroscience</em> (under revision).</li>
+          <li>Gao, S., Sun, Y., Zhao, Y. (2026+). Biomarkers during lifetimes: population dynamics and statistical modeling. <em>Biometrika</em> (submitted).</li>
+          <li>Li, C., Tian, X., Gao, S., et al. (2025). Bayesian Longitudinal Network Regression With Application to Brain Connectome Genetics. <em>Statistics in Medicine</em>.</li>
+          <li>Xu, W., Wang, S., Gao, S., et al. (2025). Supervised brain node and network construction under voxel-level functional imaging. <em>Imaging Neuroscience</em>.</li>
+          <li>Houghton, L. A., Gao, S., Gilbert, S. A., et al. (2025). Clinical trial: PD-217,014 in IBS. <em>Alimentary Pharmacology & Therapeutics</em>.</li>
+          <li>Kiernan, P. A., Day, C. A., Berkowsky, R. S., Zaleski, A. L., Gao, S., et al. (2024). Reliability and Time Course of Postexercise Hypotension. <em>Journal of Cardiovascular Development and Disease</em>, 11(2), 42.</li>
+          <li>Sakaki, J. R., Gao, S., et al. (2022). Childhood beverage intake and risk of hypertension/hyperlipidemia. <em>International Journal of Food Sciences and Nutrition</em>, 73(7), 954–964.</li>
+        </ul>
+      </section>
+
+      <section id="grants">
+        <h2>Grants</h2>
+        <ul>
+          <li>R01AG096899-01 (2025–present). NIA: Integrative Statistical Modeling for Mapping Heterogeneous Tau Pathology and Cross-Life Stage Risk Factors in Alzheimer’s Disease. Role: Investigator.</li>
+        </ul>
+      </section>
+
+      <section id="presentations">
+        <h2>Presentations</h2>
+        <h3>Invited talks</h3>
+        <ul>
+          <li>2025: Tau-Connectome Propagation Graphical Modeling, Statistics in Imaging Virtual Working Group.</li>
+          <li>2024: Statistical methods for analyzing lifespan biomarkers, ICSA Applied Statistics Symposium, Nashville, TN.</li>
+          <li>2023: Bayesian network meta-regression models, NESS, Storrs, CT.</li>
+        </ul>
+        <h3>Contributed talks</h3>
+        <ul>
+          <li>2023: Heterogeneity Analysis on Brain Connectivity for Survival Data Within the Bayesian Framework, JSM 2024.</li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching & mentoring experiences</h2>
+        <ul>
+          <li>Mentored Huizhu Jia, Jianing Zhang, Xinzhi Zhang, and Xiaoyu Shen.</li>
+          <li>UConn Statistical Consulting Services Workshops (2025–present).</li>
+          <li>Peer tutoring at UConn Statistics (2018–2020), note-taking assistance at Columbia (2015), and instruction preparation at New Oriental (2010).</li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>Honors & awards</h2>
+        <ul>
+          <li>NSF Travel Award, ICSA Applied Statistics Symposium (2024, 2025).</li>
+          <li>UConn Doctoral Student Travel Award (2022).</li>
+          <li>ISBA Travel Award (2021).</li>
+          <li>Service Award and Best Performance in Biostatistics, UConn Department of Statistics (2021).</li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p><strong>Programming:</strong> R, Python, SAS, Fortran, C++.</p>
+        <p><strong>Languages:</strong> English, Mandarin.</p>
+      </section>
+
+      <section id="references">
+        <h2>References</h2>
+        <p><strong>Yize Zhao</strong>, Associate Professor, Yale School of Public Health / Yale School of Medicine — <a href="mailto:yize.zhao@yale.edu">yize.zhao@yale.edu</a></p>
+        <p><strong>Ming-Hui Chen</strong>, Board of Trustees Distinguished Professor & Department Head, University of Connecticut — <a href="mailto:ming-hui.chen@uconn.edu">ming-hui.chen@uconn.edu</a></p>
+      </section>
+    </main>
+  </div>
   <footer>
-    <p>© 2026 Your Name — <a href="mailto:you@example.com">Contact</a></p>
+    <p>&copy; 2026 Simiao Gao, Ph.D.</p>
   </footer>
 </body>
 </html>
